@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Prescipcion Medico</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+	<body>
+		<div class="form">
+			<form action="guardar.php" method="POST">
+				<p>Nombre Medico</p>
+				<label for="medico">Su nombre</label>
+				<br>
+				<input type="text" name="medico" placeholder="Nombre" required>
+				
+				<p>Run</p>
+				<label for="run">Run Paciente</label>
+				<br>
+				<input type="text" name="run" placeholder="12.123.123-5" required>
+				
+				<p>Fecha</p>
+				<label for="fecha">Fecha prescipcion</label>
+				<br>
+				<input type="text" name="fecha" placeholder="01/01/2022" required>
+				
+				<p>Mensaje</p>
+				<label for="mensaje">Descripcion Receta</label>
+				<br>
+				<textarea name="mensaje" placeholder="Mensaje" required></textarea>
+				
+				<br>
+				<br>
+				<input type="submit" value="Enviar">
+				<a  href="mostrar.php">Stock medicamentos <img src="boton.png" />  </a>
+			</form>
+		</div>
+	</body>
+</html>
